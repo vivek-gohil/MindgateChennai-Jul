@@ -1,0 +1,261 @@
+A {
+	display() {
+		Hi
+	}
+}
+B {
+	show() {
+		A a = new A();
+		a.display();	
+	}
+}
+B extends A {
+	show() {
+		display();	
+	}
+}
+
+
+
+A {
+	A() {
+		Hi
+	}
+	A(int x,int y) {
+		How are you
+	}
+}
+B extends A {
+	B() {
+		Hello
+	}	
+	B(int x , int y , int z) {
+		super(x,y);
+		Good Morning
+	}
+}
+
+main() { 
+
+	B b = new B(10,20,30); 
+}
+
+
+
+
+1. Every Employee "has a" Address.
+	Employee
+		int employeeId
+		String name
+		double salary
+		Address homeAddress
+
+	Address
+		houseNumber,
+		street
+		city
+		pin
+
+
+2. Savings "is a" Account.
+	Generalization
+	Account
+		accountNumber
+		name
+		balance
+	
+Specialization
+	Savings extends Account
+		interstate
+		minimumBalance
+
+
+
+
+1. Customer is allowed to perform withdraw and deposit operations on Savings Account.
+2. Minimum balance of Savings account is 2500
+3. Savings account can be act as Salary account which allows customer to keep 0 balance.
+4. Customer have only one feature in Savings account i.e Savings account or Salary Account 
+
+	Savings savings = new Savings(101,"Test",10000,25000);
+	savings.withdraw(1000);
+
+Account 
+	balance=10000
+
+Current is a Account
+	OverdraftBalance=50000
+
+
+Current current  = new Current(101,"Test",10000,50000)
+
+current.withdraw(5000) //5000 , 50000
+current.withdraw(10000) //0 , 45000
+current.withdraw(5000) //0,40000
+
+current.deposit(5000) // 0 , 45000
+current.deposit(20000) //15000,50000
+current.deposit(5000) //20000,50000
+
+
+
+
+
+
+
+
+
+class Current extends Account {
+	private double overdraftBalance;
+	//default constructor
+	//overloaded constructor - 4 args
+	 
+	override withdraw(double amount)
+	{
+		...
+	}
+	override deposit(double amount)
+	{
+		... 
+	}
+}
+
+
+
+
+
+
+
+
+
+https://github.com/vivek-gohil/MindgateChennai-Jul
+Name Mangling
+Polymorphism
+	Dynamic/Runtime 
+		- Inheritance
+		- Function Overriding
+
+
+
+Shapes {
+	draw() {
+		draw something
+	}
+}
+Circle extends Shapes {
+	draw() {
+		drawing circle
+	}
+}
+Triangle extends Shapes {
+	draw() {
+		drawing triangle
+	}
+}
+Line extends Shapes {
+	draw() {
+		drawing line
+	}
+}
+
+
+main() {
+
+	Shapes shape = null;
+	choose your shape 
+	choice = scanner.nextInt();
+	shape = getShape(choice); 
+	shape.draw(); // drawing line , drawing circle , drawing trin
+	
+}
+public Shapes getShape(int choice){
+	if(choice == 1)
+		return new Circle();
+	if(choice == 2)
+		return new Triangle();
+	if(choice == 3)
+		return new Line();
+}
+
+
+ShareItem
+	share(Imnge myImage) {
+	
+	}
+WhatsApp extends ShareItem {
+	share(Imnge myImage) {
+	
+	}
+}
+Email extends ShareItem {
+	share(Imnge myImage) {
+	
+	}
+}
+
+main(){
+	ShareItem shareItem = null;
+ 	shareItem =  getPlatform(choice)
+	shareItem.share(Image)
+}
+
+
+
+
+
+
+
+A {
+	show() { Hi }
+	display() { How are you }
+}
+B extends A {
+	show() { Hello }
+	
+}
+C {
+	main() {
+		A a = new B();
+		a.display(); //error
+	}
+}
+
+AccountApplicationV6 - Polymorphism
+
+	Account Menu
+	1. Savings Account
+	2. Current Account
+	Enter your account choice
+	accountChoice
+		Accept accountNumber , name , balance
+	if accountChoice is 1
+		Do you want to create salary account(true/false)?
+	if accountChoice is 2
+		Enter your overdraft balance
+	Your account is created!
+	Print account details.
+	Transaction Menu
+	1. Withdraw
+	2. Deposit
+	3. Check Balance
+	.....
+
+	do you want to continue?
+	yes - print the transaction menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
