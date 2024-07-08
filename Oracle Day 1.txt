@@ -1,0 +1,86 @@
+Day 1 
+	DDL - Create , Alter , Drop  - Data Definition Language
+	Constraints - 
+		Primary Key ,
+		Foreign Key , 
+		Check ,
+		Not Null
+		Unique
+	DML - Insert , Update , Delete , Truncate
+	
+Day 2 
+	SELECT, Order By Group By Havings
+	Joins
+	Index
+	View	
+	Sub Query
+	Stored Procedure
+	Triggers
+
+
+
+
+1. CREATE Table
+
+CREATE TABLE employee_details(
+	employee_id NUMBER(10),
+	full_name VARCHAR2(50),
+	salary NUMBER(10,2)
+	age NUMBER(3),
+	gender VARCHAR2(6),
+	city VARCHAR2(50),
+	state VARCHAR2(50),
+	date_of_birth DATE,
+	email VARCHAR(50)	
+);
+
+
+INSERT INTO employee_details VALUES
+(462,'Arunkumar M',50000,22,'Male','Chennai','TamilNadu','23-NOV-2001','arunkumar.m@mindgate.in')
+INSERT INTO employee_details VALUES
+(4692,'Navin Balasubramani V',50000,21,'Male','Trichy','TamilNadu','13-JUN-2003','navin.b@mindgate.in');
+INSERT INTO employee_details VALUES
+(4690,'Mohammed Thaha',50000,22,'Male','Trichy','TamilNadu','08-JUL-2002','md.thaha@mindgate.in');
+INSERT INTO employee_details VALUES
+(4683,'Hariharan s',50000,22,'Male','Chennai','TamilNadu','13-JUL-2002','hariharan.s@mindgate.in');
+INSERT INTO employee_details VALUES
+(4682,'Diya Mondal',50000,20,'Female','Port Blair','Andaman and Nicobar','29-JUL-2003','diya.mondal@mindgate.in');
+INSERT INTO employee_details VALUES
+(4692,'Noor Ahamed',50000,21,'Male','Chennai','TamilNadu','29-APR-2003','noor.ahamed@mindgate.in');
+INSERT INTO employee_details VALUES
+(4695,'Sachin Lade',50000,22,'Male','Srikakulam','Andhra Pradesh','09-APR-2002','sachin.lade@mindgate.in');
+INSERT INTO employee_details VALUES
+(4681,'Arshad Akula',50000,21,'Male','Kurnool','Andhra Pradesh','04-JUL-2003','arshad.akula@mindgate.in');
+INSERT INTO employee_details VALUES
+(4696,'Sai Charan L',50000,23,'Male','Anantapor','Andhra Pradesh','27-FEB-2001','saicharn.l@mindgate.in');
+INSERT INTO employee_details VALUES
+(4689,'Mohan ',50000,23,'Male','Vijaywada','Andhra Pradesh','12-MAY-2001','mohan.k@mindgate.in');
+INSERT INTO employee_details VALUES
+(4680,'Anupam Singh',50000,21,'Male','Lucknow','Uttar Pradesh','18-SEP-2002','anupam.s@mindgate.in');
+INSERT INTO employee_details VALUES
+(4684,'Jeffery George',50000,21,'Male','Kochi','Kerala','04-NOV-2002','jeffery.g@mindgate.in');
+INSERT INTO employee_details VALUES
+(4697,'Srimathy L',50000,21,'Female','Chennai','TamilNadu','26-AUG-2002','srimathy.l@mindgate.in');
+INSERT INTO employee_details VALUES
+(4694,'Richard J',50000,20,'Male','Karaikudi','TamilNadu','01-OCT-2003','richard.j@mindgate.in');
+INSERT INTO employee_details VALUES
+(4686,'Goldwin Samuel',50000,24,'Male','Tirunelveli','TamilNadu','19-JUN-2000','goldwin.samule@mindgate.in');
+INSERT INTO employee_details VALUES
+(4685,'Revuri Giribabu',50000,21,'Male','Chittoor','Andhra Pradesh','06-JAN-2003','giribabu.r@mindgate.in');
+INSERT INTO employee_details VALUES
+(4691,'Moriskannan B',50000,21,'Male','Cuddalore','TamilNadu','01-NOV-2002','moriskannan.b@mindgate.in');
+INSERT INTO employee_details VALUES
+(4688,'Meganathan C',50000,21,'Male','Trichy','TamilNadu','09-MAY-2003','meganathan.c@mindgate.in');
+
+
+SELECT * FROM employee_details;
+
+
+
+
+
+
+
+
+
+	
