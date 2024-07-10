@@ -1,0 +1,35 @@
+Create table login_details with columns
+	login_id , user_name, password , login_count
+
+domain	
+	LoginDetails
+	
+service
+repository
+
+
+Menu
+	1. Login
+	2. New User Registration
+	Enter your choice
+	if choice 1
+		enter login_id and password
+		validate login_id and password
+		print login successful and print user_name
+		Max invalid login  = 3
+		
+	if choice 2
+		accept login_id , password , user_name
+
+
+
+
+
+
+
+
+
+
+
+
+
