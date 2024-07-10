@@ -4,6 +4,7 @@ public class Account {
 	private long accountNumber;
 	private String name;
 	private double balance;
+	private static long accountNumberCounter = 100;
 
 	public Account() {
 		System.out.println("Default constructor of Account");
@@ -11,7 +12,19 @@ public class Account {
 
 	public Account(long accountNumber, String name, double balance) {
 		super();
-		this.accountNumber = accountNumber;
+		accountNumberCounter++;
+		this.accountNumber = accountNumberCounter;
+		// this.accountNumber = accountNumber;
+		this.name = name;
+		this.balance = balance;
+		System.out.println("Overloaded constructor of Account");
+	}
+
+	public Account(String name, double balance) {
+		super();
+		accountNumberCounter++;
+		this.accountNumber = accountNumberCounter;
+		// this.accountNumber = accountNumber;
 		this.name = name;
 		this.balance = balance;
 		System.out.println("Overloaded constructor of Account");

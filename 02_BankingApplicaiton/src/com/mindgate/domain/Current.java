@@ -8,8 +8,14 @@ public class Current extends Account {
 		System.out.println("Default constructor of Current");
 	}
 
-	public Current(int accountNumber, String name, double balance, double overdraftBalance) {
+	public Current(long accountNumber, String name, double balance, double overdraftBalance) {
 		super(accountNumber, name, balance);
+		this.overdraftBalance = overdraftBalance;
+		initialOverdraftBalance = overdraftBalance;
+	}
+
+	public Current(String name, double balance, double overdraftBalance) {
+		super(name, balance);
 		this.overdraftBalance = overdraftBalance;
 		initialOverdraftBalance = overdraftBalance;
 	}
